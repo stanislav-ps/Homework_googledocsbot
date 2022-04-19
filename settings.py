@@ -8,7 +8,7 @@ CREDENTIALS = {
   "type": "service_account",
   "project_id": "my-first-project-346709",
   "private_key_id": os.getenv('PRIVATE_KEY_ID', ''),
-  "private_key": os.getenv('PRIVATE_KEY', ''),
+  "private_key": os.getenv('PRIVATE_KEY', ''). replace('\\n', '\n'),
   "client_email": "omnomnom@my-first-project-346709.iam.gserviceaccount.com",
   "client_id": os.getenv('CLIENT_ID', ''),
   "auth_uri": "https://accounts.google.com/o/oauth2/auth",
